@@ -1,5 +1,5 @@
 # Get base SDK Image from Microsoft
-FROM mcr.microsoft.com/dotnet/core/sdk:3.1
+FROM mcr.microsoft.com/dotnet/core/sdk:3.1 AS build-env
 WORKDIR /app
 
 # Copy CSPROJ file a restore any dependecies (via NuGet)
